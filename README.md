@@ -1,4 +1,4 @@
-# Expense Tracker
+#  Mini Expense Tracker
 
 ## Project Title & Brief Description
 
