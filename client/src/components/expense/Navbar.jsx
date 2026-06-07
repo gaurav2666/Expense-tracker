@@ -13,7 +13,7 @@ export function Navbar() {
               Expense Tracker
             </h1>
 
-            <p className="text-xs font-medium text-slate-500">
+            <p className="text-xs font-medium text-slate-450">
               Personal Finance Dashboard
             </p>
           </div>
