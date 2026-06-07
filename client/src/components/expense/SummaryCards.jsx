@@ -63,7 +63,7 @@ export function SummaryCards({ expenses }) {
 >
             <div className="relative">
               <div className="flex items-center justify-between">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gray-500">
+                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gray-450">
                   {s.label}
                 </p>
                 <div className={`rounded-lg bg-background/60 p-2 ${s.iconColor}`}>
