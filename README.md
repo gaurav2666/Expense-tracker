@@ -259,8 +259,7 @@ The following improvements were intentionally left for future development:
 
 * User authentication and authorization
 * Multi-user expense management
-* Dark mode support
-* Expense receipt image uploads
+* Enhanced UI/UX with dark mode and theme customization
 * Monthly email reports
 * Advanced analytics dashboard
 * Recurring expense reminders
