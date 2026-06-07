@@ -61,10 +61,10 @@ export function ExpenseList({ expenses, onEdit, onDelete }){
                 </td>
                 <td className="px-5 py-3.5">
                   <div className="flex justify-end gap-1">
-                   <button onClick={() => onEdit(e)} className="rounded p-2 hover:bg-gray-100"> 
-                      <Pencil className="h-4 w-4" />
+                   <button onClick={() => onEdit(e)} className="rounded p-2 hover:bg-gray-100 cursor-pointer"> 
+                      <Pencil className="h-4 w-4 " />
                     </button>
-                    <button  className="rounded p-2 text-red-500 hover:bg-red-50"
+                    <button  className="rounded p-2 text-red-500 hover:bg-red-50 cursor-pointer"
                      onClick={() => onDelete(e)}>
                       <Trash2 className="h-4 w-4" />
                     </button>

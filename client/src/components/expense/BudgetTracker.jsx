@@ -42,7 +42,7 @@ export function BudgetTracker({ expenses, budgets,setBudgets, }){
                                 [c]: Number(value),}));
                             }}
                         }
-                             className="rounded p-1 text-blue-500 transition hover:bg-blue-50 hover:scale-110">
+                             className="rounded p-1 text-blue-500 transition hover:bg-blue-50 hover:scale-110 cursor-pointer">
                                 <Pencil className="h-3.5 w-3.5" />
                                 </button>
                   {over && (

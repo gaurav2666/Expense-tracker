@@ -9,6 +9,7 @@ import { EmptyState } from "./components/expense/EmptyState";
 import { ConfirmDeleteModal } from "./components/expense/ConfirmDeleteModal";
 import { BudgetTracker } from "./components/expense/BudgetTracker";
 import API from "./services/api";
+import toast from "react-hot-toast";
 function App() {
   const [expenses, setExpenses] = useState([]);
   const [editing, setEditing] = useState(null);
@@ -52,10 +53,12 @@ const fetchExpenses = async () => {
   try {
     if (editing) {
       await API.put(`/expenses/${editing._id}`, expenseData);
+       toast.success("Expense updated successfully ✏️");
 
       setEditing(null);
     } else {
       await API.post("/expenses", expenseData);
+      toast.success("Expense added successfully 🎉");
     }
 
     fetchExpenses();
@@ -69,6 +72,7 @@ const fetchExpenses = async () => {
     if (!toDelete) return;
 
     await API.delete(`/expenses/${toDelete._id}`);
+    toast.success("Expense deleted successfully 🗑️");
 
     fetchExpenses();
 

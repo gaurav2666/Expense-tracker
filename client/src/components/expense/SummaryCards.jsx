@@ -53,13 +53,13 @@ export function SummaryCards({ expenses }) {
   ];
 
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 cursor-pointer">
       {stats.map((s) => {
         const Icon = s.icon;
         return (
          <div
-  key={s.label}
-  className={`group relative overflow-hidden rounded-xl border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 ${s.bgColor}`}
+         key={s.label}
+         className={`group relative overflow-hidden rounded-xl border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 ${s.bgColor}`}
 >
             <div className="relative">
               <div className="flex items-center justify-between">

@@ -114,7 +114,7 @@ useEffect(() => {
         <div className="flex gap-2 pt-1">
           <button
           type="submit"
-          className="flex flex-1 items-center justify-center gap-2 rounded bg-blue-500 px-4 py-2 text-white">
+          className="flex flex-1 items-center justify-center gap-2 rounded bg-blue-500 px-4 py-2 text-white cursor-pointer">
             <Plus className="mr-1.5 h-4 w-4" />
             {initial ? "Save Changes" : "Add Expense"}
           </button>
@@ -122,7 +122,7 @@ useEffect(() => {
             <button
             type="button"
             onClick={onCancel}
-            className="rounded border px-4 py-2">Cancel
+            className="rounded border px-4 py-2 cursor-pointer">Cancel
             </button>
           )}
         </div>

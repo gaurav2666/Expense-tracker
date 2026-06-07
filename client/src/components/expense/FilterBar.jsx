@@ -106,13 +106,13 @@ export function FilterBar({ filters, setFilters,expenses, }) {
 
         <button
          onClick={reset}
-         className="flex items-center gap-2 rounded border px-3 py-2">
+         className="flex items-center gap-2 rounded border px-3 py-2 cursor-pointer">
             <RotateCcw className="h-4 w-4" />
             Reset
             </button>
              <button
              onClick={() => exportExpensesToCSV(expenses)}
-             className="flex items-center gap-2 rounded-lg border border-blue-200 bg-linear-to-r from-blue-500 to-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:shadow-lg hover:shadow-blue-200 active:scale-95">
+             className="flex items-center gap-2 rounded-lg border border-blue-200 bg-linear-to-r from-blue-500 to-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:shadow-lg hover:shadow-blue-200 active:scale-95 cursor-pointer">
                 <Download className="h-4 w-4" />Export CSV
                 </button>
            </div>
